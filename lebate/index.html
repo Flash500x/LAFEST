@@ -11,65 +11,72 @@
 <body>
     <header>
         <a href="#" class="logo">LA FEST</a>
-        
-            <ul>
+        <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
                 <li><a href="#" >HOME</a></li>
                 <li><a href="#">LEGACY</a></li>
                 <li><a href="#" class="active">EVENTS</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                
+                <li><a href="#">RULES</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 </ul>
      </header>
                 <section>
-                    <img src="images/left.png" id="man_left">
-                    <img src="images/right1.png" id="man_right">
+                    <img class="image" src="images/left.png" id="man_left">
+                    <img class="image" src="images/right.png" id="man_right">
                      
                      
      
                      <img src="images/color_pattern.png" id="back">
      
                      <a href="#" id="btn">Back to Events</a>
+                     <style>
+                         @media(max-width:991px){
+                         .img{
+                             display:none;
+                         }
+                         }
+                     </style>
                      <h2 id="text">L'ebate</h2>
                  </section>
                 <div class="sec" id="sec">
                     
-                    <h2>
-                        Tune into your inner scholars, and unleash all your worldly knowledge in this battle of the words.
-Leave no fact unchecked as you try to pin down your opponents with your well-built opinions.
-Use all your strength, and you might just beat them all in this debate event.
+                                        <h2>
+                                            Tune into your inner scholars, and unleash all your worldly knowledge in this battle of the words.
+                    Leave no fact unchecked as you try to pin down your opponents with your well-built opinions.
+                    Use all your strength, and you might just beat them all in this debate event.
 
+                                        </h2> <br>
+                                        <h2> 
+                                        </h2>
+                                        <h2>Rules:</h2>
+                                        <p>
+                                            1: two participants per team<br>
+                    2: two preliminary rounds (offstage) will determine the 4 teams that qualify to the on-stage
+                        rounds<br>
+                    3: The on-stage round will determine the 2 teams that qualify to the Finals.<br>
+                    4: Prelims Rules: Speakers will be allowed 2 min to deliver their points, after which the
+                        opposition can ask questions for 3 minutes [maximum of 3 questions].<br>
+                    5: On-stage Rules: The Speaking Team will be given 5 min to deliver their points, after   
+                        which the opposition can ask questions for 3 minutes [maximum of 3 questions].<br>
+                    6: Participants will not be allowed to change their stand during the course of the debate.<br>
+                    7: No new constructive arguments may be introduced in the rebuttal period. The     affirmative 
+                        must, if possible, reply to the major negative arguments before the last rebuttal. During the rebuttal session, the speaker is not allowed to seek the help of his teammate.<br>
+                    8: In the questioning period, the questioner may ask any fair, clear question that has a direct bearing on the debate. Cross questioning is not allowed.<br>
+                    9: Any gains made outside of the established procedure are disallowed. <br></p><br><br>
+                    <h2>
+                        Judging Criteria:<br>
                     </h2> <br>
-                    <h2> 
-                    </h2>
-                    <h2>Rules:</h2>
                     <p>
-                        1: two participants per team<br>
-2: two preliminary rounds (offstage) will determine the 4 teams that qualify to the on-stage
-     rounds<br>
-3: The on-stage round will determine the 2 teams that qualify to the Finals.<br>
-4: Prelims Rules: Speakers will be allowed 2 min to deliver their points, after which the
-    opposition can ask questions for 3 minutes [maximum of 3 questions].<br>
-5: On-stage Rules: The Speaking Team will be given 5 min to deliver their points, after   
-    which the opposition can ask questions for 3 minutes [maximum of 3 questions].<br>
-6: Participants will not be allowed to change their stand during the course of the debate.<br>
-7: No new constructive arguments may be introduced in the rebuttal period. The     affirmative 
-    must, if possible, reply to the major negative arguments before the last rebuttal. During the rebuttal session, the speaker is not allowed to seek the help of his teammate.<br>
-8: In the questioning period, the questioner may ask any fair, clear question that has a direct bearing on the debate. Cross questioning is not allowed.<br>
-9: Any gains made outside of the established procedure are disallowed. <br></p><br><br>
-<h2>
-    Judging Criteria:<br>
-</h2> <br>
-<p>
-    1. Literary Skills<br>
-    2. Language Proficiency<br>
-    3. Confidence/Poise<br>
-    4. Clarity of Arguments<br>
-    5. Adherence to the time limit<br>
-    6. Valid Proof
-    
-    
-</p>
+                        1. Literary Skills<br>
+                        2. Language Proficiency<br>
+                        3. Confidence/Poise<br>
+                        4. Clarity of Arguments<br>
+                        5. Adherence to the time limit<br>
+                        6. Valid Proof
+                        
+                        
+                    </p>
 
 
                         
@@ -81,17 +88,21 @@ Use all your strength, and you might just beat them all in this debate event.
                     
                          window.addEventListener('scroll',function(){
                         let value=window.scrollY;
-                        // man_right.style.top=value*0.2+'px';
-                        // man_left.style.top=value*0.2+'px';
-                        // text.style.marginBottom=value*0.5+'px';
+                        man_right.style.top=value*0.2+'px';
+                         man_left.style.top=value*0.2+'px';
+                         text.style.marginBottom=value*0.5+'px';
                       })
      
                 </script>
+                <script>
+                    function menuToggle()
+                        {
+                        const toggleMenu = document.querySelector('.toggleMenu');
+                        const navigation = document.querySelector('.navigation');
+                        toggleMenu.classList.toggle('active')
+                        navigation.classList.toggle('active')
+                        }
+                </script>
 
-            
-           
-
-                
-           
-        </body>
+          </body>
     </html>
