@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LA FEST</a>
+        <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+            <li><a href="../index.html" >HOME</a></li>
+            <li><a href="../Legacy/index.html">LEGACY</a></li>
+            <li><a href="../Events/index.html" >EVENTS</a></li>
+            <li><a href="../rules/index.html" class="active">RULES</a></li>
+            <li><a href="../aboutus/index.html">ABOUT US</a></li>
+            </ul>
+            
+
+        </header>
+        <section>
+        <h1 class="head js-tilt">General Rules</h1>
+   
+
+    <div class="card">
+            <ul class="flex">
+                <li>1.   Registration is free for all schools. All students above Std IX are eligible to participate. The reporting time is 7:30 am. </li>
+                <li>2.   A school is expected to participate in at least three events. </li>
+                <li>3.   A student can participate in a maximum of three events.</li>
+                <li>4.   Maximum number of non-participants from a school is 40. </li>
+                <li>5.   Two green rooms will be provided for each school.</li>
+                <li>6.   Food coupons will cost Rs.350. Booking of food coupons closes a day prior to the event. Cancellation is not possible.</li>
+                <li>7.   LA Fest badges will be distributed at the registration desk. Participants and non-participants have to display their badges throughout the event.</li>
+                <li>8. Vulgarity or obscenity in language or actions will lead to disqualification.</li>
+                <li>9.  Completed forms should be submitted on or before 10 June 2022.</li>
+                <li>10. Food and beverages will not be allowed in the Indoor Stadium.</li>
+                <li>11. Participants are requested to cooperate with the organisers and maintain a spirit of healthy competition. </li>
+                <li>12. All participants and non-participants should be in their respective school uniforms.</li>
+                <li>13. Decision of the judges will be final.</li>
+
+
+                    
+            </ul>
+    </div>
+    <div data-tilt></div> <!-- Tilt element -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script> <!-- Load jQuery first -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.min.js" ></script> <!-- Load jQuery first -->
+</section>
+
+</body>
+<script>
+    $('.js-tilt').tilt({
+        glare: true,
+        maxGlare: 1000,
+        reset: true,
+        scale: 1.1
+    })
+    
+</script>
+<script>
+    function menuToggle()
+        {
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active')
+        navigation.classList.toggle('active')
+        }
+</script>
+</html>

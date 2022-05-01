@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'Elianto';
+    src: url(fonts/Elianto-Regular.ttf);
+  }
+  @font-face {
+      font-family: 'Russo';
+      src: url(fonts/Russo_One.ttf);
+  }
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  header
+  {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Elianto';
+  }
+  header .logo
+  {
+  color: #fff;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  font-size: 2em;
+  font-family: 'Elianto';
+  }
+  
+  header ul{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  font-family: 'Elianto';
+  }
+  header ul li{
+  list-style: none;
+  margin-left: 5px;
+  
+  }
+  header ul li a{
+    text-decoration: none;
+    padding: 5px 13px;
+    color: #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s ease-out;
+  }
+  
+  header ul li a:hover,
+  header ul li a.active{
+    letter-spacing: 4px;
+    transition: all 0.2s ease-in;
+    background: rgb(255, 255, 255) ;
+    color: rgb(0, 0, 0);
+  }
+  
+body{
+    background-color: #F5F4F8;
+}
+.image{
+    position: relative;
+    background-image: url(images/loyola.jpg);
+     height: 20rem;
+     width: 100%;
+     background-size: cover; 
+     background-position: center; 
+     background-repeat: no-repeat;
+}
+section{
+
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0;
+}
+section h1{
+    font-family: 'Russo';
+    font-weight: 400;
+}
+
+.card{
+    height: auto;
+    width: auto;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+.flex{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex li{
+    margin: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+}
+
+.flex h2{
+    font-size: 1.2rem;
+}
+@media (max-width: 991px)
+{
+ section
+ {
+     padding: 40px;
+ }
+ header
+ {
+      padding: 20px 40px;
+}
+header .logo
+{
+    position: relative;
+    max-width: 60px;
+}
+header ul
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+}
+header ul.active
+{
+    visibility: visible;
+    opacity: 1;
+}
+header ul li a
+{
+ display: inline-block;
+ color: rgba(0, 0, 0, 0.836);
+ font-weight: 400;
+ margin-left: 0;
+ text-decoration: none;
+ font-size: 2em;
+ margin: 10px 0;
+}
+header ul li a:hover
+{
+    color: #19a15d;
+}
+.toggleMenu
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(images/menu.png);  
+    background-position: center; 
+    background-repeat: no-repeat;         
+    background-size: 30px;
+    z-index: 2;
+    cursor: pointer;
+}
+.toggleMenu.active
+{
+  background: url(images/close.png);  
+ background-position: center; 
+ background-repeat: no-repeat;         
+ background-size: 25px;
+ filter: invert(1);
+}
+.sec
+{
+    position: relative;
+    padding: 50px;
+    background: #ACDE9C;
+}
+.sec h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 300;
+}
+.sec h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+    
+}
+.sec p{
+    color: rgb(0, 0, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-bottom: 0px;
+}
+}
