@@ -161,8 +161,14 @@ section img{
 
 @media (max-width: 991px)
 {
-  section img{
+.image{
       display:none;
+  }
+  section{
+      background:url(images/new\ left\ and\ right.png);
+      background-repeat: no-repeat;
+      width:auto;
+      
   }
  section
  {
