@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>La Fest1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+
+
+<body>
+    <header>
+        <a href="#" class="logo">LA FEST</a>
+        
+            <ul>
+                <li><a href="#" >HOME</a></li>
+                <li><a href="#">LEGACY</a></li>
+                <li><a href="#" class="active">EVENTS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </header>
+            <section>
+               <img src="images/stars.png" id="stars">
+                <img src="images/new_cube.png" id="core">
+                
+
+                <img src="images/hij.png" id="back">
+
+                <a href="#" id="btn">Back to Events</a>
+                <h2 id="text">Block N Tangles</h2>
+                
+                
+                
+                
+                
+                
+            </section>
+           <div class="sec" id ="sec">
+               <h3><i>“If you can be true to your own character you are a true actor.”
+            </i></h3> <br>
+               <h2>The colosseum gives you a chance to thread yourselves into the very fabric of your characters and animate them immaculately. Unfurl your wings and command the skies. Block N’ Tangles await.
+              </h2><br><br>
+            <h2>Rules:</h2>
+            <p>1) Any number of people can be sent for the prelims(written). Of which: <br><br>
+                    &emsp;&emsp; i.Only 8 teams move to the semi-finals. <br>
+                &emsp;&emsp; ii.4 teams will qualify for the final event.<br><br>
+            2) Onstage event will have three rounds.<br><br><br>
+            
+                </p>
+                <h2>Judging Criteria:</h2><br>
+                <p>1.  Spontaneous wit and humour
+                    <br><br>
+                    2. Creativity <br><br>
+                    3. Acting skills <br><br>
+                    4. Coordination as a group <br><br>
+                    
+                    </p>
+           </div>
+
+           <script>
+               let core=document.getElementById('core');
+               let back=document.getElementById('back');
+               let text=document.getElementById('text');
+               let stars=document.getElementById('stars');
+                    window.addEventListener('scroll',function(){
+                   let value=window.scrollY;
+                   core.style.top = value*1.2+'px';
+                   back.style.bottom =value*0.5+'px';
+                   text.style.marginBottom = value*1+'px';
+                   stars.style.right = value *0.5+'px';
+                 })
+
+           </script>
+        </body>
+    </html>

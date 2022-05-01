@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>L'Attire</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+
+<body>
+    <header>
+        <a href="#" class="logo">LA FEST</a>
+        
+            <ul>
+                <li><a href="#" >HOME</a></li>
+                <li><a href="#">LEGACY</a></li>
+                <li><a href="#" class="active">EVENTS</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </header>
+            <section>
+                <img src="images/stars.png" id="stars">
+                 <img src="images/new_cube.png" id="core">
+                 
+ 
+                 <img src="images/neeeee.jpg" id="back">
+ 
+                 <a href="#" id="btn">Back to Events</a>
+                 <h2 id="text">L'attire</h2>
+                 
+                 
+                 
+                 
+                 
+                 
+             </section>
+           <div class="sec" id ="sec">
+               <h3><i>"Elegance is the only beauty that never fades."
+               </i></h3> <br>
+               <h2>We offer you the brainchild of the Batch of ‘23. This all-out fashion show that is unique to this edition of LA Fest, focused on the originality of the participants and the elegance of their designs. Conquer the stage and mesmerise the audience with your scintillating designs and exquisite taste in fashion.
+              </h2><br><br>
+            <h2>Rules:</h2>
+            <p>1. One team can represent each school.<br>
+                2. The teams will be assigned a topic just before the event.<br>
+                3. The team is expected to prepare three sets of costumes relevant to the topic.<br>
+                4. Materials like newspapers, paints, staples, tape, tissues, glue, magazines and cloth in
+                    their designs will be provided.<br>       
+                5. You may choose music during your 2-minute ramp walk. The designers are anticipated to 
+                    receive questions from the judges while the models go down the runway.<br>
+                6. Over your respective school uniforms, you should wear your designed costumes.<br><br>
+                
+                  
+                    
+                    </p>
+                    <h2> Judging Criteria:</h2><br>
+                    <p> 1. Presentation and Design<br>
+                        2. Creativity<br>
+                        3. Skill in handling the theme<br>
+                        4. Confidence and attitude of the models<br>
+                        5. Elegance
+
+           </div>
+
+           <script>
+               let core=document.getElementById('core');
+               let back=document.getElementById('back');
+               let text=document.getElementById('text');
+               let stars=document.getElementById('stars');
+                    window.addEventListener('scroll',function(){
+                   let value=window.scrollY;
+                   core.style.top = value*1.2+'px';
+                   back.style.bottom =value*0.5+'px';
+                   text.style.marginBottom = value*1+'px';
+                   stars.style.right = value *0.5+'px';
+                 })
+
+           </script>
+        </body>
+    </html>

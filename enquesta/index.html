@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>La Fest1</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+
+
+
+<body>
+    <header>
+        <a href="#" class="logo">LA FEST</a>
+        
+            <ul>
+                <li><a href="#" >HOME</a></li>
+                <li><a href="#">LEGACY</a></li>
+                <li><a href="#" class="active">EVENTS</a></li>
+             
+                <li><a href="#">RULES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                </ul>
+            </header>
+            <section>
+                
+                
+                
+                <img src="images/brain2.png" id="b">
+               <!-- <img src="images/enquesta345.png" id="brain"> -->
+                
+                <h2 id="text">Enquesta</h2> 
+                
+
+                <a href="#" id="btn">Back to Events</a>
+                
+            </section>
+           <div class="sec" id ="sec">
+               <h2>Observe the world around you for we will ask you the questions about things you failed to notice. <br> Keep your minds sharp and may Athena stand behind you in this war of wisdom and knowledge. <br> Use all your senses to extrapolate from the subtle clues in the questionnaire and emerge victorious in this Colosseum.
+
+
+            </h2><br> <br> <br>
+            <h2>Rules:</h2> <br><br>
+            <p>1.  No team limit for a school in the quiz.
+                <br><br>
+                
+                2.   2 people per team. <br> <br>
+                3.  There will be a preliminary round with 20 questions to select 6 teams for the Finals
+                . <br> <br>
+                4.  There can be no more than 2 teams from the same school in the Finals.
+
+                <br><br>
+                5.  The Finals will consist of 6 rounds out of which there will be eliminations in the
+                3rd and the 5th rounds.
+             <br><br>
+                6. The questions can be of Pounce and Bounce, Buzzer or Point Auction format.
+                <br><br>
+                7.   The Quizmaster's decision is final.
+                <br><br>
+                
+                
+                    </p>
+                   
+           </div>
+
+           <script>
+               let question= document.getElementById('question');
+               
+               let pattern = document.getElementById('pattern');
+               let button=document.getElementById('btn');
+
+               window.addEventListener('scroll', function(){
+                   let value=window.scrollY;
+                   question.style.top= value*1.5+'px';
+                   
+                   pattern.style.left=value*1+'px';
+                   button.style.bottom=value*0.5+'px';
+
+               })
+             </script>
+        </body>
+    </html>
