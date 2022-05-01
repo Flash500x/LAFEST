@@ -158,18 +158,18 @@ section img{
         font-size: 4em;
     }
 }
-
+@media(max-width:700px)
+{
+    .image{
+        display:none;
+    }
+    
+}
 @media (max-width: 991px)
 {
-.image{
-      display:none;
-  }
-  section{
-      background:url(images/new\ left\ and\ right.png);
-      background-repeat: no-repeat;
-      width:auto;
-      
-  }
+
+
+
  section
  {
      padding: 40px;
