@@ -12,19 +12,21 @@
     <header>
         <a href="#" class="logo">LA FEST</a>
         
-            <ul>
+        <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+
                 <li><a href="#" >HOME</a></li>
                 <li><a href="#">LEGACY</a></li>
                 <li><a href="#" class="active">EVENTS</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li><a href="#">CONTACT</a></li>
+                
+                <li><a href="#">RULES</a></li>
                 <li><a href="#">ABOUT US</a></li>
                 </ul>
             </header>
             <section>
                 
-                 <img src="images/man.png" id="john">
-                 <img src="images/girl.png" id="uma">
+                 <img  class="image "src="images/man.png" id="john">
+                 <img  class="image"src="images/girl.png" id="uma">
                  <img src="images/new_back.png" id="back">
  
                  
@@ -68,15 +70,24 @@
                let uma=document.getElementById('uma');
                let john=document.getElementById('john');
                let text=document.getElementById('text');
-               let stars=document.getElementById('stars');
+               
                     window.addEventListener('scroll',function(){
                    let value=window.scrollY;
                    uma.style.top = value*0.5+'px';
                    john.style.top =value*0.5+'px';
                    text.style.marginBottom = value*1+'px';
-                   stars.style.right = value *0.5+'px';
+                   
                  })
 
            </script>
+           <script>
+            function menuToggle()
+                {
+                const toggleMenu = document.querySelector('.toggleMenu');
+                const navigation = document.querySelector('.navigation');
+                toggleMenu.classList.toggle('active')
+                navigation.classList.toggle('active')
+                }
+        </script>
         </body>
     </html>
