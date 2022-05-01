@@ -209,6 +209,10 @@ footer {
   @media (max-width:991px)
 {
 
+    #footer{
+        flex-direction: column;    
+    }
+
   .showcase{
     background-image: url(images/new\ beb.png);
     -webkit-background-size: cover;
