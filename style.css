@@ -1,33 +1,60 @@
 @font-face {
   font-family: 'Elianto';
   src: url(fonts/Elianto-Regular.ttf);
-}
-*{
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   
 }
-body{
-  margin:0px;  
+*{
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header{
+  font-family: 'Elianto', sans-serif;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+header .logo
+{
+  color: rgb(255, 255, 255);
+  font-weight:700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+header ul{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+header ul li{
+  list-style: none;
+  margin-left: 20px;
+
+}
+header ul li a{
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #ffffff;
+  border-radius: 20px;
+  transition: 0.4s;
 }
 
-
-.showcase
-{
-  background-image: url(images/new_web.jpg);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-}
-.showcase.active
-{
-right: 300px;
+header ul li a:hover,
+header ul li a.active{
+  transition: 0.2s;
+  letter-spacing: 6px;
+  background: rgb(255, 255, 255) ;
+  color: rgb(0, 0, 0);
 }
 .container{
   background: gray;
@@ -39,27 +66,25 @@ right: 300px;
   text-align: center;
   overflow: hidden;
   position: relative;
-  
-
-}
-.container h1{
-  color: white;
-}
-.container h1, .container img{
-  z-index: 20;
-  font-family: 'Elianto';
-  font-size: 2.3em;
-}
-.container video{
-  position: absolute;
-  
-  z-index: 0;
-  animation: invert 10s infinite;
   filter: invert(1);
 }
 
-
-
+.container h1, .container img{
+  z-index: 20;
+  
+}
+.container img{
+  filter: invert(1);
+}
+.container h1{
+  font-family: 'Elianto';
+}
+.container video{
+  position: absolute;
+  height: 100vh;
+  z-index: 0;
+  animation: invert 10s infinite;
+}
 footer {
   position: relative;
   
@@ -89,148 +114,4 @@ footer a{
 }
 
 
-.menu
-{
-position: absolute;
-top: 0;
-right: 0;
-width: 300px;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-@media(max-width:800px)
-{
-  .showcase{
-    background-image: url(images/new\ beb.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-
-  }
-}
-
-@media (max-width:991px)
-{
-
-  .showcase{
-    background-image: url(images/new\ beb.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-  }
-    
-    section
-         {
-             padding: 40px;
-         }
-         header
-         {
-              padding: 20px 40px;
-        }
-        header .logo
-        {
-            position: relative;
-            max-width: 60px;
-        }
-        header ul
-        {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgb(0, 0, 0);
-            z-index: 1;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            transition: 0.2s;
-            visibility: hidden;
-            opacity: 0;
-        }
-        header ul.active
-        {
-            visibility: visible;
-            opacity: 1;
-        }
-        header ul li a
-        {
-         display: inline-block;
-         color: #51554f;
-         font-weight: 400;
-         margin-left: 0;
-         text-decoration: none;
-         font-size: 2em;
-         margin: 10px 0;
-        }
-        header ul li a:hover,
-        header ul li a.active
-{
-    background: rgb(255, 255, 255) ;
-    color: rgb(0, 0, 0);
-}
-
-.toggleMenu
-{
-  position: relative;
-    width: 40px;
-    height: 40px;
-    background: url(https://i.ibb.co/HrfVRcx/menu.png); 
-    background-position: center; 
-    background-repeat: no-repeat;         
-    background-size: 30px;
-    z-index: 2;
-    cursor: pointer;
-}
-.text a
-{
-
-font-size: 1em;
-background: #fff;
-padding: 3px 10px;
-margin-left: 10px;
-text-transform: uppercase;
-text-decoration: none;
-font-weight: 500;
-color: #111;
-letter-spacing: 2px;
-transition: 0.2s;
-}
-}
-.toggleMenu.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);  
-  background-position: center; 
-  background-repeat: no-repeat;         
-  background-size: 25px;
-  
-}
-.content 
-        {
-            flex-direction: column;
-            margin-top: 80px;
-        }
-.content .textBox
-{
-    position: relative;
-    max-width: 100%;
-    padding-right: 20px;
-}
-.content .textBox h2
-{
-font-size: 3em;
-}
 
