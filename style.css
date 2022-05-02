@@ -112,6 +112,32 @@ footer a{
   text-decoration:none ;
   color: var(--footer-link-color);
 }
-
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 100px;
+  justify-content: right;
+  align-items: left;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+.js-tilt{
+  transform-style: preserve-3d;
+}
 
 
