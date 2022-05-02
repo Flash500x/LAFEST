@@ -81,6 +81,7 @@ header ul li a.active{
 }
 .container video{
   position: absolute;
+  width: auto;
   height: 100vh;
   z-index: 0;
   animation: invert 10s infinite;
