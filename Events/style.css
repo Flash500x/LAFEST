@@ -53,12 +53,13 @@ header ul li a{
     padding: 5px 18px;
     color: #ffffff;
     border-radius: 40px;
+    transition: 0.4s;
 }
 
 header ul li a:hover,
 header ul li a.active{
-    letter-spacing: 4px;
-  transition:all 0.3s ease-in;
+    letter-spacing: 6px;
+  transition:0.2s;
  
     background: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
@@ -200,22 +201,22 @@ ul{
     box-shadow: 1px 4px 37px 1px #342dfc;
 }
 footer {
-    position: absolute;
-    margin-left: 0;
+    position: relative;
+    
     height: 100px ;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 0 -10px;
+    padding: 0 100px;
     text-align: left;
     font-size: 0.5em;
+    
     z-index: 11;
-    background: #1D1D1F;
+    background:#13011D;
     color: #ffffff;
     font-weight: 200;
     font-family: Arial, Helvetica, sans-serif;
-    
   }
   
   footer .hr{
@@ -226,7 +227,6 @@ footer {
     text-decoration:none ;
     color: var(--footer-link-color);
   }
-  
 
 
 .js-tilt{

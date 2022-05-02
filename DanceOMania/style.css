@@ -64,8 +64,8 @@ header ul li a{
 
 header ul li a:hover,
 header ul li a.active{
-    transition: 0.4s;
-    letter-spacing: 4px;
+    transition: 0.2s;
+    letter-spacing: 6px;
     background: rgb(255, 255, 255) ;
     color: #7732A5;
 }
@@ -170,6 +170,9 @@ section img#john{
     #text{
         font-size:3rem;
     }
+    #footer{
+        flex-direction: column;
+    }
 }
 @media (max-width: 991px)
 {
@@ -193,7 +196,8 @@ header ul
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(255, 255, 255);
+    background:#3322AB;
+    color: white;
     z-index: 1;
     flex-direction: column;
     align-items: center;
@@ -210,7 +214,7 @@ header ul.active
 header ul li a
 {
  display: inline-block;
- color: rgba(0, 0, 0, 0.836);
+ color: rgba(0, 0, 0, 1);
  font-weight: 400;
  margin-left: 0;
  text-decoration: none;
@@ -267,3 +271,30 @@ font-size: 1.2em;
 margin-bottom: 0px;
 }
 }
+footer {
+    position: relative;
+    
+    height: 100px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: left;
+    font-size: 0.5em;
+    
+    z-index: 11;
+    background:#2D123F;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer .hr{
+    justify-content: center;
+    align-items: center;
+  }
+  footer a{
+    text-decoration:none ;
+    color: var(--footer-link-color);
+  }

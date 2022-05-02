@@ -57,13 +57,13 @@ header ul li a{
     padding: 6px 12px;
     color: #000000;
     border-radius: 40px;
-    transition: all 0.1s ease-out;
+    transition: 0.4s;
 }
 
 header ul li a:hover,
 header ul li a.active{
-    transition: all 0.3s ease-in-out;
-    letter-spacing: 3px;
+    transition: all 0.2s ease-in-out;
+    letter-spacing: 6px;
     background: #d6d5d5 ;
     color: rgb(0, 0, 0);
     

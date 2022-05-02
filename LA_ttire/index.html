@@ -9,17 +9,18 @@
 
 <body>
     <header>
-        <a href="#" class="logo">LA FEST</a>
+
+        <a href="../index.html" class="logo">LA FEST</a>
+        <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../Legacy/index.html">LEGACY</a></li>
+            <li><a href="../Events/index.html" class="active">EVENTS</a></li>
+            <li><a href="../rules/index.html">RULES</a></li>
+            <li><a href="../aboutus/index.html">ABOUT US</a></li>
+            </ul>
+        </header>
         
-            <ul>
-                <li><a href="../index.html" >HOME</a></li>
-                <li><a href="../Legacy/index.html">LEGACY</a></li>
-                <li><a href="../Events/index.html" class="active">EVENTS</a></li>
-                <li><a href="../rules/index.html">RULES</a></li>
-                
-                <li><a href="../aboutus/index.html">ABOUT US</a></li>
-                </ul>
-            </header>
             <section>
                 <img src="images/stars.png" id="stars">
                  <img src="images/new_cube.png" id="core">
@@ -28,14 +29,8 @@
                  <img src="images/neeeee.jpg" id="back">
  
                  <a href="../Events/index.html" id="btn">Back to Events</a>
-                 <h2 id="text">L'attire</h2>
-                 
-                 
-                 
-                 
-                 
-                 
-             </section>
+                 <h2 id="text">L'attire</h2>            
+                 </section>
            <div class="sec" id ="sec">
                <h3><i>"Elegance is the only beauty that never fades."
                </i></h3> <br>
@@ -80,5 +75,46 @@
                  })
 
            </script>
+           <footer>
+            <div style="font-size: 12px; display: flex; justify-content: space-between; width: 100%; padding: 0 0px;">
+                <div style="display: flex; align-items: center;"> 
+                    <h3>Contact Us&emsp;&emsp;</h3>
+                </div>
+                <div >
+                    
+                <a href="https://earth.google.com/web/search/Loyola+School,+Sreekariyam+-+Aakkulam+Road,+Opposite+CTCRI,+Bapuji+Nagar,+Sreekariyam,+Trivandrum,+Kerala/@8.5423058,76.9119276,37.80843865a,1043.43198993d,35y,0h,45t,0r/data=CtYBGqsBEqQBCiUweDNiMDViZWI0MjgwODcwNzk6MHg2MDQ5YTUyYTYzYzI2MzY4GbvcFhupFSFAIXeUlAVdOlNAKmlMb3lvbGEgU2Nob29sLCBTcmVla2FyaXlhbSAtIEFha2t1bGFtIFJvYWQsIE9wcG9zaXRlIENUQ1JJLCBCYXB1amkgTmFnYXIsIFNyZWVrYXJpeWFtLCBUcml2YW5kcnVtLCBLZXJhbGEYAiABIiYKJAncFmr6DhYhQBG1Sfq0oBQhQBkznBxokzpTQCGqB-qDOjpTQCgC">Trivandrum</a>
+                
+                  
+                
+                </div>
+                </div>
+    
+            <div style="font-size: 12px; display: flex; justify-content: space-between; width: 100%;padding: 10px 0;">
+                <div style="display: flex; align-items: center;"> 
+                    <ul style="list-style: none; display: flex; gap: 0 10px;">
+                        
+                        
+                        <li>Fr Roy Alex SJ : +91 8921-472900</li>
+                        <li>Abhay Pillai : +91 85900 63944</li>
+                        <li>Ayan A Haq: +91 8547553329</li>
+                        <li>Official email : <a href="mailto:lafest2023@gmail.com">lafest2023@gmail.com</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+    
+           
+        </footer>
+    </script>
+    <script type="text/javascript">
+        function menuToggle()
+        {
+        const toggleMenu = document.querySelector('.toggleMenu');
+        const navigation = document.querySelector('.navigation');
+        toggleMenu.classList.toggle('active')
+        navigation.classList.toggle('active')
+        }
+</script>
+
         </body>
     </html>

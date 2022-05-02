@@ -59,10 +59,13 @@ header ul li a{
     padding: 6px 15px;
     color: #000000;
     border-radius: 20px;
+    transition: 0.4s;
 }
 
 header ul li a:hover,
 header ul li a.active{
+    transition: 0.2s;
+    letter-spacing: 6px;
     background: rgb(255, 255, 255) ;
     color: #ACDE9C;
 }
@@ -276,3 +279,30 @@ font-size: 1.2em;
 margin-bottom: 0px;
 }
 }
+footer {
+    position: relative;
+    
+    height: 100px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: left;
+    font-size: 0.5em;
+    
+    z-index: 11;
+    background:#485D42;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer .hr{
+    justify-content: center;
+    align-items: center;
+  }
+  footer a{
+    text-decoration:none ;
+    color: var(--footer-link-color);
+  }
