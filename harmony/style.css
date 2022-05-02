@@ -59,10 +59,13 @@ header ul li a{
     padding: 6px 15px;
     color: #000000;
     border-radius: 20px;
+    transition: 0.4s;
 }
 
 header ul li a:hover,
 header ul li a.active{
+    transition: 0.2s;
+    letter-spacing: 6px;
     background: rgb(255, 255, 255) ;
     color: rgb(104, 95, 187);
 }
@@ -205,7 +208,14 @@ footer {
       font-size: 17px;
   
     }
+    #text{
+        font-size: 4rem;
+    }
+    #btn{
+        padding: 5px 13px;
+    }
   }
+
   @media (max-width:991px)
 {
 

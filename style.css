@@ -8,56 +8,10 @@
   padding: 0;
   
 }
-
-header
-{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-padding: 30px 100px;
-z-index: 1000;
-display: flex;
-justify-content: space-between;
-align-items: center;
-font-family: 'Elianto';
-}
-header .logo
-{
-color: #fff;
-text-transform: uppercase;
-list-style: none;
-text-decoration: none;
-font-size: 2em;
-font-family: 'Elianto';
+body{
+  margin:0px;  
 }
 
-header ul{
-display: flex;
-justify-content: right;
-align-items: center;
-font-family: 'Elianto';
-}
-header ul li{
-list-style: none;
-margin-left: 20px;
-
-}
-header ul li a{
-  text-decoration: none;
-  padding: 5px 13px;
-  color: #ffffff;
-  border-radius: 15px;
-  transition: all 0.2s ease-out;
-}
-
-header ul li a:hover,
-header ul li a.active{
-  letter-spacing: 4px;
-  transition: all 0.2s ease-in;
-  background: rgb(255, 255, 255) ;
-  color: rgb(0, 0, 0);
-}
 
 .showcase
 {
@@ -75,48 +29,35 @@ header ul li a.active{
 {
 right: 300px;
 }
+.container{
+  background: gray;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  
 
-
-
-
-
-
-.text
-{
-  margin-top: 250px;
-position:relative;
-z-index: 10;
+}
+.container h1{
+  color: white;
+}
+.container h1, .container img{
+  z-index: 20;
+  font-family: 'Elianto';
+  font-size: 2.3em;
+}
+.container video{
+  position: absolute;
+  
+  z-index: 0;
+  animation: invert 10s infinite;
+  filter: invert(1);
 }
 
-.text h2
-{
-
-font-size: 3em;
-font-weight: 800;
-color: #fff;
-line-height: 1em;
-text-transform: uppercase;
-}
-
-.text a
-{
-display: inline-block;
-font-size: 1em;
-background: #fff;
-padding: 5px 13px;
-text-transform: uppercase;
-text-decoration: none;
-font-weight: 500;
-margin-top: 10px;
-margin-left: 180px;
-color: #111;
-letter-spacing: 2px;
-transition: 0.2s;
-}
-.text a:hover
-{
-letter-spacing: 4px;
-}
 
 
 footer {
