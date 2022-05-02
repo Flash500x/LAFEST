@@ -144,7 +144,11 @@ footer a{
 @media (max-width:991px)
 {
   .container img{
-    
+    transform: scale(0.6);
+    margin-top: 2%;
+  }
+  .container h1{
+    font-size:1.8rem;
   }
 
     #footer{
