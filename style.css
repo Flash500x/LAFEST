@@ -175,7 +175,7 @@ footer a{
   position: absolute;
   z-index: 10;
   bottom: 10px;
-  left: 30vh;
+  left: 0;
   justify-content: right;
   align-items: center;
   display:flex;
@@ -195,20 +195,20 @@ footer a{
   }
 
 }
-@media(max-width:1024px){
-  .social
-  {
-  position: absolute;
-  z-index: 10;
-  bottom: 10px;
-  left: 50%;
-  justify-content: right;
-  align-items: center;
-  display:flex;
-  }
-}
-@media (max-width:991px)
-{
+    @media(max-width:1024px){
+      .social
+      {
+      position: absolute;
+      z-index: 10;
+      bottom: 10px;
+      left: 35%;
+      justify-content: right;
+      align-items: center;
+      display:flex;
+      }
+    }
+    @media (max-width:991px)
+    {
   section
          {
              padding: 40px;
