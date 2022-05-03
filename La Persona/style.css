@@ -29,7 +29,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -183,35 +183,56 @@ footer {
     text-decoration:none ;
     color: var(--footer-link-color);
   }
-  @media (max-width:991px)
-{
-
-    #footer{
-        flex-direction: column;    
-    }
-    .social
+  @media(max-width:710px)
   {
-  position: absolute;
-  z-index: 10;
-  bottom: 10px;
-  left: 50%;
-  justify-content: right;
-  align-items: center;
-  flex-direction: column;
+      .sec h2{
+          font-size:1.2em;
+      }
+     .sec p{   
+         font-size: 15px;
+     }
+    .judge{
+        font-size: 15px;
+    }
+    #text{
+        font-size: 4rem;
+    }
+    #btn{
+        padding: 5px 13px;
+    }
+    footer{
+        height:auto;
+        text-align: left;
+        padding: 0 50px;
+
+    }
+    
+  }
+  @media(max-width:1024px){
+      #text{
+          font-size: 6rem;
+      }
   }
 
-  .showcase{
-    background-image: url(images/new\ beb.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-  }
+
+
+
+
+
+
+  @media (max-width:991px)
+{     
+    #text{
+        font-size: 3rem;
+    }
+   
     
+          .sec{
+                padding:20px;
+            }
+
+
+        
     section
          {
              padding: 40px;
@@ -223,7 +244,8 @@ footer {
         header .logo
         {
             position: relative;
-            max-width: 60px;
+            /* max-width: 60px; */
+            font-size:1.5em
         }
         header ul
         {
@@ -232,7 +254,7 @@ footer {
             left: 0;
             width: 100%;
             height: 100%;
-            background: #F89436;
+            background:#F26523;
             z-index: 1;
             flex-direction: column;
             align-items: center;
@@ -249,11 +271,11 @@ footer {
         header ul li a
         {
          display: inline-block;
-         color: #000000;
+         color: #ffffff;
          font-weight: 400;
          margin-left: 0;
          text-decoration: none;
-         font-size: 2em;
+         font-size: 20px;
          margin: 10px 0;
         }
         header ul li a:hover,
@@ -315,7 +337,4 @@ font-size: 3em;
 }
 
 }
-
-
-
 

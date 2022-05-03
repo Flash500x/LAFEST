@@ -31,7 +31,7 @@
   text-transform: uppercase;
   list-style: none;
   text-decoration: none;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: 'Elianto';
   }
   
@@ -128,8 +128,9 @@ li{
 }
 header .logo
 {
+    top: 5px;
     position: relative;
-    max-width: 60px;
+    /* max-width: 60px; */
 }
 header ul
 {
@@ -159,7 +160,7 @@ header ul li a
  font-weight: 400;
  margin-left: 0;
  text-decoration: none;
- font-size: 2em;
+ font-size: 20px;
  margin: 10px 0;
 }
 header ul li a:hover

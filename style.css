@@ -70,6 +70,7 @@ header ul li a.active{
 }
 
 .container h1, .container img{
+  
   z-index: 20;
   
 }
@@ -78,6 +79,7 @@ header ul li a.active{
 }
 .container h1{
   font-family: 'Elianto';
+  
 }
 .container video{
   position: absolute;
@@ -121,40 +123,80 @@ footer a{
   left: 95%;
   justify-content: right;
   align-items: center;
+  
 }
+
 .social li
 {
   list-style: none;
 }
 .social li a
 {
-  display: flex;
+  display: inline-block;
+  margin-right: 20px;
   filter: invert(1);
-  flex-direction: column;
-  transform: scale(0.6);
+  transform: scale(0.5);
   transition: 0.5s;
 }
 .social li a:hover
 {
-  transform: scale(0.6) translateY(-15px);
+  transform: scale(0.5) translateY(-15px);
 }
 .js-tilt{
   transform-style: preserve-3d;
 }
-@media (max-width:991px)
-{
+@media(max-width:550px){
   .container img{
     transform: scale(0.6);
     margin-top: 2%;
   }
   .container h1{
-    font-size:1.8rem;
+    font-size:1.5rem;
+    margin-top: -20%;
   }
 
     #footer{
         flex-direction: column;    
     }
     .social
+        {
+        position: absolute;
+        z-index: 10;
+        bottom: 10px;
+        left: 20%;
+        justify-content: right;
+        align-items: center;
+        display:flex;
+        }
+}
+@media(max-width:768px){
+  .social
+  {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 30vh;
+  justify-content: right;
+  align-items: center;
+  display:flex;
+  }
+}
+@media(max-width:880px)
+{
+  .social
+  {
+  position: absolute;
+  z-index: 10;
+  bottom: 10px;
+  left: 30vh;
+  justify-content: right;
+  align-items: center;
+  display:flex;
+  }
+
+}
+@media(max-width:1024px){
+  .social
   {
   position: absolute;
   z-index: 10;
@@ -162,22 +204,12 @@ footer a{
   left: 50%;
   justify-content: right;
   align-items: center;
-  flex-direction: column;
+  display:flex;
   }
-
-  .showcase{
-    background-image: url(images/new\ beb.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-  }
-    
-    section
+}
+@media (max-width:991px)
+{
+  section
          {
              padding: 40px;
          }
@@ -187,8 +219,10 @@ footer a{
         }
         header .logo
         {
+            top:5px;
             position: relative;
-            max-width: 60px;
+            padding: 0px;
+            font-size: 1.5em;
         }
         header ul
         {
@@ -214,11 +248,11 @@ footer a{
         header ul li a
         {
          display: inline-block;
-         color: #51554f;
+         color: #ffffff;
          font-weight: 400;
          margin-left: 0;
          text-decoration: none;
-         font-size: 2em;
+         font-size: 20px;
          margin: 10px 0;
         }
         header ul li a:hover,

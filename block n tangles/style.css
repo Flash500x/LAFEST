@@ -22,6 +22,27 @@ body{
     background: linear-gradient(#FFA782, #FFD4A9);
     
 }
+footer {
+    position: relative;
+    height: auto;
+    width: 100%;
+    justify-content: left;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: left;
+    font-size: 0.5em;
+    z-index: 11;
+    background:#13011D;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  footer a{
+    text-decoration:none ;
+    color: var(--footer-link-color);
+  }
 header{
     font-family: 'Elianto', sans-serif;
     font-weight: 600;
@@ -29,7 +50,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,11 +205,42 @@ footer {
     text-decoration:none ;
     color: var(--footer-link-color);
   }
+  @media(max-width:991px)
+  {
+      .sec h2{
+          font-size:1.2em;
+      }
+     .sec p{   
+         font-size: 15px;
+     }
+    .judge{
+        font-size: 15px;
+    }
+    #text{
+        font-size: 2.3rem;
+    }
+    #btn{
+        padding: 5px 13px;
+    }
+    footer{
+        height:auto;
+        text-align: left;
+        padding: 0 95px;
+
+    }
+    
+  }
   @media (max-width:991px)
 {
+    .sec{
+        padding:20px;
+    }
 
-    #footer{
-        flex-direction: column;    
+
+    footer{
+        height: auto;        
+        padding: 0 50px;
+
     }
     .social
   {
@@ -224,7 +276,8 @@ footer {
         header .logo
         {
             position: relative;
-            max-width: 60px;
+            /* max-width: 60px; */
+            font-size: 20px;
         }
         header ul
         {
@@ -254,7 +307,7 @@ footer {
          font-weight: 400;
          margin-left: 0;
          text-decoration: none;
-         font-size: 2em;
+         font-size: 1.5em;
          margin: 10px 0;
         }
         header ul li a:hover,

@@ -29,7 +29,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,6 +39,7 @@ header .logo
 {
     color: rgb(255, 255, 255);
     font-weight:700;
+    
     text-decoration: none;
     font-size: 2em;
     text-transform: uppercase;
@@ -155,16 +156,13 @@ section img#mountains_front{
 }
 footer {
     position: relative;
-    
-    height: 100px ;
+    height: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
     padding: 0 100px;
     text-align: left;
     font-size: 0.5em;
-    
     z-index: 11;
     background:#13011D;
     color: #ffffff;
@@ -172,10 +170,7 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
   }
   
-  footer .hr{
-    justify-content: center;
-    align-items: center;
-  }
+  
   footer a{
     text-decoration:none ;
     color: var(--footer-link-color);
@@ -193,20 +188,26 @@ footer {
   justify-content: center;
   align-items: center;
   }
-  
-  @media(max-width:800px)
+  .judge{
+    display:flex; 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    list-style: none;
+    flex-direction: column;
+    gap: 10px 10px; 
+    font-weight: 500;
+    font-size: 18.72px;
+ }
+  @media(max-width:710px)
   {
-    .showcase{
-      background-image: url(images/new\ beb.png);
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position:  top;
-      height: 100vh;
-      padding: 100px;
-      font-family: 'Elianto', sans-serif ;
-      font-weight:500;
-      font-size: 17px;
-  
+      .sec h2{
+          font-size:1.2em;
+      }
+     .sec p{   
+         font-size: 15px;
+     }
+    .judge{
+        font-size: 15px;
     }
     #text{
         font-size: 4rem;
@@ -214,27 +215,34 @@ footer {
     #btn{
         padding: 5px 13px;
     }
+    footer{
+        height:auto;
+        text-align: left;
+        padding: 0 95px;
+
+    }
+    
   }
+  @media(max-width:1024px){
+      #text{
+          font-size: 6rem;
+      }
+  }
+
 
   @media (max-width:991px)
-{
-
-    #footer{
-        flex-direction: column;    
+{     
+    #text{
+        font-size: 3rem;
     }
-
-  .showcase{
-    background-image: url(images/new\ beb.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-  }
+   
     
+          .sec{
+                padding:20px;
+            }
+
+
+        
     section
          {
              padding: 40px;
@@ -246,7 +254,8 @@ footer {
         header .logo
         {
             position: relative;
-            max-width: 60px;
+            /* max-width: 60px; */
+            font-size:1.5em
         }
         header ul
         {
@@ -276,7 +285,7 @@ footer {
          font-weight: 400;
          margin-left: 0;
          text-decoration: none;
-         font-size: 2em;
+         font-size: 20px;
          margin: 10px 0;
         }
         header ul li a:hover,
