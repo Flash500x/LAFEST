@@ -209,6 +209,10 @@
     }
     @media (max-width:991px)
     {
+      footer{
+        height:auto;
+        padding: 0px 30px;
+      }
   section
          {
              padding: 40px;
