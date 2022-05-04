@@ -191,7 +191,7 @@ footer {
 
     }
     #text{
-        font-size:1rem;
+        font-size:4rem;
     }
     #footer{
         flex-direction: column;
@@ -291,10 +291,10 @@ footer {
 
     .toggleMenu
     {
-    position: relative;
+        position: relative;
         width: 40px;
         height: 40px;
-        background: url(https://i.ibb.co/HrfVRcx/menu.png); 
+        background: url(images/menu.png); 
         background-position: center; 
         background-repeat: no-repeat;         
         background-size: 30px;
@@ -322,6 +322,7 @@ footer {
     background-position: center; 
     background-repeat: no-repeat;         
     background-size: 25px;
+    filter: invert(1);
     
     }
     .content 

@@ -28,7 +28,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 30px 100px;
+        padding: 30px 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -185,48 +185,30 @@
     }
     @media (max-width:991px)
     {
-
         footer{
-            height: auto;
+            padding: 0 30px;
         }
-        #text{
-            font-size:5rem;
+        .sec{
+            padding:20px;
         }
-        .social
-    {
-    position: absolute;
-    z-index: 10;
-    bottom: 10px;
-    left: 50%;
-    justify-content: right;
-    align-items: center;
-    flex-direction: column;
-    }
-
-    .showcase{
-        background-image: url(images/new\ beb.png);
-        -webkit-background-size: cover;
-        background-size: cover;
-        background-position:  top;
-        height: 100vh;
-        padding: 100px;
-        font-family: 'Elianto', sans-serif ;
-        font-weight:500;
-        font-size: 17px;
-    }
-        
-        section
-            {
-                padding: 40px;
-            }
-            header
-            {
+      footer{
+        height:auto;
+        padding: 0px 30px;
+      }
+  section
+         {
+             padding: 40px;
+         }
+         header
+         {
               padding: 20px 40px;
         }
         header .logo
         {
+            top:5px;
             position: relative;
-            max-width: 60px;
+            padding: 0px;
+            font-size: 1.5em;
         }
         header ul
         {
@@ -256,7 +238,7 @@
          font-weight: 400;
          margin-left: 0;
          text-decoration: none;
-         font-size: 2em;
+         font-size: 20px;
          margin: 10px 0;
         }
         header ul li a:hover,
@@ -318,6 +300,30 @@ font-size: 3em;
 }
 
 }
+@media(max-width:710px)
+  {
+      .sec h2{
+          font-size:1.2em;
+      }
+     .sec p{   
+         font-size: 15px;
+     }
+    .judge{
+        font-size: 15px;
+    }
+    #text{
+        font-size: 4rem;
+    }
+    #btn{
+        padding: 5px 13px;
+    }
+    footer{
+        height:auto;
+        text-align: left;
+        padding: 0 30px;
 
+    }
+    
+  }
 
 

@@ -17,7 +17,7 @@ header{
     font-family: 'Elianto', sans-serif;
     font-weight: 600;
     position: absolute;
-    top: -5px;
+    top: -20px;
     left: 0;
     width: 100%;
     padding: 0 0px;
@@ -84,7 +84,6 @@ ul{
     margin: 3rem;
     grid-template-columns: repeat(3,1fr);
     list-style: none;
-    margin-bottom: 100px;
 }
 
 
@@ -200,6 +199,7 @@ ul{
     width: 325px;
     border-radius: 10px;
     z-index: 1;
+    margin-bottom: 50px;
   }
 .item-seven:hover{
     box-shadow: 1px 4px 37px 1px #342dfc;
@@ -245,7 +245,6 @@ footer {
         flex-direction: column;
         margin-top: 100px;
         gap: 2rem 0;
-        margin-bottom: 100px;
     }
 
     .item-one,

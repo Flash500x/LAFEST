@@ -17,12 +17,29 @@
 }
 
 body{
-    background:repeating-radial-gradient(#ffffff, white);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
+    background: url(images/unknown.png);
     height: 100vh;
 }
+
+#text{
+        font-size:4rem;
+        color: white;
+
+    }
+    section::before
+    {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background:linear-gradient(to top,#102044,transparent);
+        z-index: 1000;
+    }
+    #btn{
+        background: white;
+        color: #102044;
+    }
 header{
     font-family: 'Elianto', sans-serif;
     font-weight: 600;
@@ -30,7 +47,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 30px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,7 +55,7 @@ header{
 }
 header .logo
 {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-weight:700;
     text-decoration: none;
     font-size: 2em;
@@ -58,7 +75,7 @@ header ul li{
 header ul li a{
     text-decoration: none;
     padding: 6px 15px;
-    color: #000000;
+    color: #ffffff;
     border-radius: 20px;
     transition: 0.4s;
 }
@@ -67,8 +84,8 @@ header ul li a:hover,
 header ul li a.active{
     letter-spacing: 6px;
     transition: 0.2s;
-    background: rgb(0, 0, 0) ;
-    color: rgb(255, 255, 255);
+    background: rgb(255, 255, 255) ;
+    color: rgb(0, 0, 0);
 }
 section{
     position: relative;
@@ -114,7 +131,7 @@ section img#buildings{
 }
 #text{
     position: absolute;
-    color: #000000;
+    color: #ffffff;
     white-space: nowrap;
     font-size: 7.5vw;
     z-index: 9;
@@ -128,8 +145,8 @@ section img#buildings{
     display: inline-block;
     padding: 8px 30px;
     border-radius: 40px;
-    background: rgb(0, 0, 0);
-    color: #ffffff;
+    background: rgb(255, 255, 255);
+    color: #000000;
     font-size: 1.5em;
     transform: translateY(100px); 
 
@@ -138,13 +155,13 @@ section img#buildings{
 {
     position: relative;
     padding:100px;
-    background: white;
+    background: #102044;
     padding-bottom: 1em;
     
 }
 
 .sec h2{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
     
@@ -152,61 +169,126 @@ section img#buildings{
     
 }
 .sec p{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     margin-bottom: 100px;
 }
-@media (max-width:991px)
-{
+section::before
+        {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100px;
+            background:linear-gradient(to top,#102044,transparent);
+            z-index: 1000;
+        }
+footer {
+    position: relative;
+    
+    height: 100px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 100px;
+    text-align: left;
+    font-size: 0.5em;
+    
+    z-index: 11;
+    background:#000000;
+    color: #ffffff;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  footer .hr{
+    justify-content: center;
+    align-items: center;
+  }
+  footer a{
+    text-decoration:none ;
+    color: var(--footer-link-color);
+  }
+  @media(max-width:710px)
+  {
+    .sec{
+        padding:20px;
+    }
+      .sec h2{
+          font-size:1.2em;
+      }
+     .sec p{   
+         font-size: 15px;
+     }
+    .judge{
+        font-size: 15px;
+    }
     #text{
         font-size: 4rem;
     }
     #btn{
-        font-size: 20px;
-        padding: 6px 15px;
+        padding: 5px 13px;
     }
+    footer{
+        height:auto;
+        background: #040810;
+        text-align: left;
+        padding: 0 95px;
 
-    #footer{
-        
-        flex-direction: column;    
     }
-    .social
-  {
-  position: absolute;
-  z-index: 10;
-  bottom: 10px;
-  left: 50%;
-  justify-content: right;
-  align-items: center;
-  flex-direction: column;
-  }
-
-  .showcase{
-    background-image: url(images/new\ beb.png);
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position:  top;
-    height: 100vh;
-    padding: 100px;
-    font-family: 'Elianto', sans-serif ;
-    font-weight:500;
-    font-size: 17px;
-  }
+}
     
-    section
+
+@media (max-width:991px){
+    body{
+        background: url(images/unknown.png);
+    }
+     #text{
+            font-size:4rem;
+            color: white;
+
+        }
+        
+        #btn{
+            background: white;
+            color: #102044;
+        }
+      footer{
+        height:auto;
+        padding: 0px 30px;
+      }
+
+      .sec{
+          background: #102044;
+          color: white;
+
+      }
+      .sec h2{
+          color: white;
+      }
+      .sec p{
+          color: white;
+      }
+
+  section
          {
              padding: 40px;
          }
          header
          {
               padding: 20px 40px;
+              color: white;
         }
         header .logo
         {
+            top:5px;
             position: relative;
-            max-width: 60px;
+            padding: 0px;
+            font-size: 1.5em;
+            color: white;
         }
         header ul
         {
@@ -236,7 +318,7 @@ section img#buildings{
          font-weight: 400;
          margin-left: 0;
          text-decoration: none;
-         font-size: 2em;
+         font-size: 20px;
          margin: 10px 0;
         }
         header ul li a:hover,
@@ -257,7 +339,6 @@ section img#buildings{
     background-size: 30px;
     z-index: 2;
     cursor: pointer;
-    filter:invert(1);
 }
 .text a
 {
@@ -276,7 +357,7 @@ transition: 0.2s;
 
 .toggleMenu.active
 {
-  background: url(https://i.ibb.co/rt3HybH/close.png);  
+  background: url(images/close.png);  
   background-position: center; 
   background-repeat: no-repeat;         
   background-size: 25px;
@@ -299,33 +380,6 @@ font-size: 3em;
 }
 
 }
-footer {
-    position: relative;
-    
-    height: 100px ;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 100px;
-    text-align: left;
-    font-size: 0.5em;
-    
-    z-index: 11;
-    background:#ffffff;
-    color: #000000;
-    font-weight: 200;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  footer .hr{
-    justify-content: center;
-    align-items: center;
-  }
-  footer a{
-    text-decoration:none ;
-    color: var(--footer-link-color);
-  }
 
 
 
