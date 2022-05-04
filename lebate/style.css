@@ -19,7 +19,7 @@
 body{
     min-height: 100vh;
     overflow-x:hidden;
-    background: linear-gradient(#FBCDF1, #E8DCE9);
+    background: linear-gradient(#5f94d5d8, #4e93e8d8);
     
 }
 header{
@@ -86,7 +86,7 @@ section::before
     bottom: 0;
     width: 100%;
     height: 100px;
-    background:linear-gradient(to top,#ACDE9C,transparent);
+    background:linear-gradient(to top,#4e93e8d8,transparent);
     z-index: 1000;
 }
 section h2,section a{
@@ -131,7 +131,7 @@ section img{
 {
     position: relative;
     padding:100px;
-    background: #ACDE9C;
+    background: #4e93e8d8;
 }
 .sec h2{
     color: rgb(0, 0, 0);
