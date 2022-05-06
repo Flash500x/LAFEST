@@ -67,7 +67,7 @@ header ul li a.active{
     transition: 0.2s;
     letter-spacing: 6px;
     background: rgb(255, 255, 255) ;
-    color: #ACDE9C;
+    color: #76A4DC;
 }
 section{
     position: relative;
@@ -133,7 +133,7 @@ section img{
     padding:100px;
     background: #4e93e8d8;
 }
-.sec h2{
+.sec h2, h3{
     color: rgb(0, 0, 0);
     font-family: 'Russo One', sans-serif;
     font-weight: 300;

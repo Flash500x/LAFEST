@@ -139,13 +139,12 @@ section img#mountains_front{
     background: #350351;
 }
 
-.sec h2{
+.sec h2,h3{
     color: #fff;
     font-family: 'Russo One', sans-serif;
     font-weight: 500;
     
     margin-bottom: 10px;
-    
 }
 .sec p{
     color: #fff;
