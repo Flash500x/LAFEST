@@ -165,7 +165,8 @@ header ul li a
 }
 header ul li a:hover
 {
-    color: #19a15d;
+    color: #ffffff;
+    background: black;
 }
 .toggleMenu
 {
