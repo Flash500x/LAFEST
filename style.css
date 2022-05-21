@@ -3,6 +3,10 @@
       src: url(fonts/Elianto-Regular.ttf);
       
     }
+    @font-face{
+      font-family: 'Russo';
+      src:url(fonts/Russo_One.ttf);
+    }
     *{
       margin: 0;
       padding: 0px;
@@ -88,7 +92,15 @@
       z-index: 0;
       animation: invert 10s infinite;
     }
-    footer {
+   
+  .container p{
+    font-family: 'Russo', sans-serif;
+    z-index: 100;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+  }
+      footer {
       position: relative;
       
       height: 100px ;
