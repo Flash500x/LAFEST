@@ -98,7 +98,7 @@
     z-index: 100;
     text-align: center;
     font-size: 25px;
-    margin-top: 50px;
+    margin-top: 10px;
   }
       footer {
       position: relative;
@@ -132,8 +132,8 @@
       position: absolute;
       z-index: 10;
       bottom: 50%;
-      left: 95%;
-      justify-content: right;
+      left: 20px;
+      justify-content: center;
       align-items: center;
       
     }
@@ -145,7 +145,6 @@
     .social li a
     {
       display: inline-block;
-      margin-right: 20px;
       filter: invert(1);
       transform: scale(0.5);
       transition: 0.5s;
@@ -175,35 +174,11 @@
             position: absolute;
             z-index: 10;
             bottom: 10px;
-            left: 35%;
+            left: 40%;
             justify-content: right;
             align-items: center;
             display:flex;
             }
-    }
-    @media(min-width:768px){
-      .social
-      {
-        position: absolute;
-        z-index: 10;
-        bottom: 10px;
-        left: 35%;
-        justify-content: right;
-        align-items: center;
-        display:flex;
-      }
-    }
-    @media(min-width: 912px){
-      .social{
-        position: absolute;
-        z-index: 10;
-        bottom: 10px;
-        left: 45%;
-        justify-content: right;
-        align-items: center;
-        display:flex;
-
-      }
     }
     
 
