@@ -197,6 +197,15 @@ footer {
     font-weight: 500;
     font-size: 18.72px;
  }
+ .item-one{
+    background-image: url(./images/robert-michalski-nowe-kostki.jpg);
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    z-index: 1;
+}
   @media(max-width:710px)
   {
       .sec h2{
