@@ -223,6 +223,16 @@ footer {
     filter: invert(1);
     
 }
+.item-two{
+    background-image: url(./images/living\ world.jpeg);
+    position: relative;
+    display: inline-block;
+    height: 77px;
+    width: 168px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
   @media(max-width:710px)
   {
     .sec{

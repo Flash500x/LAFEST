@@ -183,6 +183,15 @@ footer {
     text-decoration:none ;
     color: var(--footer-link-color);
   }
+  .item-one{
+    background-image: url(./images/welgate.png);
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    z-index: 1;
+}
   
 @media (max-width:500px)
 {

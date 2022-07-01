@@ -185,6 +185,15 @@ footer {
     text-decoration:none ;
     color: var(--footer-link-color);
   }
+  .item-one{
+    background-image: url(./images/carestack.jpeg);
+    position: relative;
+    display: inline-block;
+    height: 80px;
+    width: 663px;
+    border-radius: 10px;
+    z-index: 1;
+  }
   @media(max-width:991px)
   {
       .sec h2{
